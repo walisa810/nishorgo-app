@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_Tennis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewmodelclass.TennisMatch">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvTeamOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Federer"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/tvTeamTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nadal"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/tvScoreOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="48dp"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTeamOne" />
+    <TextView
+        android:id="@+id/tvScoreTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="48dp"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTeamTwo" />
+
+    <Button
+        android:id="@+id/btnTeamOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Score"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreOne" />
+    <Button
+        android:id="@+id/btnTeamTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Score"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreOne" />
+</androidx.constraintlayout.widget.ConstraintLayout>

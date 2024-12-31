@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_rvhome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RV.RVHomeWork">
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000070"
+        android:textStyle="bold"
+        android:fontFamily="@font/tenor_sans"
+        android:text="@string/List"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:paddingBottom="10dp"
+        android:paddingStart="15dp"
+        android:paddingTop="35dp"
+
+        app:layout_constraintBottom_toTopOf="@id/rvlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvlist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading" />
+</androidx.constraintlayout.widget.ConstraintLayout>

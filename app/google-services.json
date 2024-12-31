@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "179831169952",
+    "firebase_url": "https://nishorgo-172c7-default-rtdb.firebaseio.com",
+    "project_id": "nishorgo-172c7",
+    "storage_bucket": "nishorgo-172c7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179831169952:android:1b5d37c8f88c98a7ffbac5",
+        "android_client_info": {
+          "package_name": "com.walisaalam.class3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw53LmcCdiGe9YRPl2ZEloEOUA83d-_hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

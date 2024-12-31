@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E3E3"
+    tools:context=".Final_Project.Flowering_Plants">
+
+    <ImageView
+        android:id="@+id/ivFlower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape"
+        app:srcCompat="@drawable/flowers_main" />
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/tenor_sans"
+        android:text="Flowering Plants"
+        android:textColor="#FFF"
+        android:textFontWeight="800"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableStart="@drawable/icons_search"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Search Flowering Plants..."
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toTopOf="@+id/rvPlantList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFlower" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="33dp"
+        android:fontFamily="@font/tenor_sans"
+        android:text="Nature's vibrant bloomers"
+        android:textColor="#FFF"
+        android:textFontWeight="500"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPlantList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+         />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#91A66C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/rvPlantList">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/ibHome"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_home"
+                android:contentDescription="Navigate to Home"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/ibIButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_info"
+                android:contentDescription="Navigate to Info"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/ibArticle"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_article"
+                android:contentDescription="Navigate to Articles"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/ibNotifications"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_bell"
+                android:contentDescription="Navigate to Notifications"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

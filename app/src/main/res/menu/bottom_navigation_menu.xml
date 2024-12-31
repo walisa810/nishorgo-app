@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Home -->
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title=""
+        android:iconTint="#fff" />
+
+
+    <!-- Info -->
+    <item
+        android:id="@+id/menu_info"
+        android:icon="@drawable/info"
+        android:title=""
+        android:iconTint="#fff" />
+
+    <item
+        android:id="@+id/menu_article"
+        android:icon="@drawable/article"
+        android:title=""
+        android:iconTint="#fff" />
+
+    <!-- Notifications -->
+    <item
+        android:id="@+id/menu_notifications"
+        android:icon="@drawable/noti"
+        android:title=""
+        android:iconTint="#fff" />
+</menu>

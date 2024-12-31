@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MovieApp.FullView">
+
+    <ImageView
+        android:id="@+id/ivFullMovieImage"
+        android:layout_width="273dp"
+        android:layout_height="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvFullMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Title"
+        android:textSize="30sp"
+        android:textFontWeight="600"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:fontFamily="@font/tenor_sans"
+        app:layout_constraintEnd_toEndOf="@+id/ivFullMovieImage"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/ivFullMovieImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivFullMovieImage" />
+
+    <TextView
+        android:id="@+id/tvFullMovieRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/tenor_sans"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFullMovieTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvFullMovieTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvFullMovieTitle" />
+
+    <TextView
+        android:id="@+id/tvFullMovieDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/tenor_sans"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvFullMovieRelease"
+        app:layout_constraintStart_toStartOf="@+id/tvFullMovieRelease"
+        app:layout_constraintTop_toBottomOf="@+id/tvFullMovieRelease" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

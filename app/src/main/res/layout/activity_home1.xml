@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_Home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Final_Project.Home">
+
+    <ScrollView
+        android:id="@+id/svhome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--873dp,400dp-->
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@drawable/shape"
+                app:srcCompat="@drawable/home_design" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/tenor_sans"
+                android:text="Nishorgo"
+                android:textColor="#FFF"
+                android:textFontWeight="800"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.194"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="33dp"
+                android:fontFamily="@font/tenor_sans"
+                android:text="Care and Cure for plants "
+                android:textColor="#FFF"
+                android:textFontWeight="500"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <EditText
+                    android:id="@+id/search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="410dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/icons_search"
+                    android:drawableTint="#000"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Search Plants..."
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColorHint="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:fontFamily="@font/tenor_sans"
+                    android:text="Categories"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textFontWeight="800"
+                    android:textSize="30sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCategories">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvFloweringPlants"
+                            android:layout_width="260dp"
+                            android:layout_height="250dp"
+                            android:layout_marginEnd="20dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="240dp"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="10dp"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/flowers" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:paddingStart="15dp"
+                                    android:text="Flowering Plants"
+                                    android:fontFamily="@font/tenor_sans"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingStart="15dp"
+                                    android:text="Nature's vibrant bloomers"
+                                    android:textColor="#333"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="260dp"
+                            android:layout_height="250dp"
+                            android:layout_marginEnd="20dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="240dp"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="10dp"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/vegetables" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:paddingStart="15dp"
+                                    android:text="Vegetable Plants"
+                                    android:fontFamily="@font/tenor_sans"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingStart="15dp"
+                                    android:text="Fresh Harvest, Rooted in Care"
+                                    android:textColor="#333"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="260dp"
+                            android:layout_height="250dp"
+                            android:layout_marginEnd="20dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="240dp"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="10dp"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardElevation="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/fruits" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:paddingStart="15dp"
+                                    android:text="Fruit Plants"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/tenor_sans"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingStart="15dp"
+                                    android:text="Sweet Bounty, Naturally Yours"
+                                    android:textColor="#333"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/tvArticles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/tenor_sans"
+                    android:text="Articles"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textFontWeight="800"
+                    android:textSize="30sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvArticleList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarArticle"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateTint="#333"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fitsSystemWindows="true"
+        android:background="#91A66C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/svhome">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/ibHome"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_home"
+                android:contentDescription="Navigate to Home"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/ibIButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_info"
+                android:contentDescription="Navigate to Info"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/ibArticle"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_article"
+                android:contentDescription="Navigate to Articles"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/ibNotifications"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/icons_bell"
+                android:contentDescription="Navigate to Notifications"
+                android:layout_marginStart="30dp"
+                android:background="#91A66C"
+                app:tint="#fff"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
