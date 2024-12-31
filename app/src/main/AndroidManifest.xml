@@ -22,13 +22,7 @@
         <activity
             android:name=".Final_Project.BaseActivity"
             android:exported="false" />
-        <activity
-            android:name=".NotelyApp.HomeActivity"
-            android:exported="false" /> <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
+
         <activity
             android:name=".Final_Project.SplashScreen"
             android:exported="true" >
@@ -113,13 +107,7 @@
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
-        <activity
-            android:name=".RV.RVHomeWork"
-            android:exported="false" /> <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
+
         <activity
             android:name=".recyclerVew.recyclerViewDemo"
             android:exported="false" /> <!-- <intent-filter> -->
@@ -127,32 +115,8 @@
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
-        <activity
-            android:name=".Activity.Home"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.signup2"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.signup"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.login"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.login_signup"
-            android:exported="false" /> <!-- android:launchMode="singleTask"> -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
-        <activity
-            android:name=".Activity.MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.MainActivity"
-            android:exported="false" />
+
+
         <activity
             android:name=".ui.theme.ConsLayout"
             android:exported="false" /> <!-- android:exported="true"> -->

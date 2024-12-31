@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context=".AddActivity">
+    tools:context=".Final_Project.AddActivity">
 
     <!-- Back arrow -->
     <androidx.constraintlayout.widget.ConstraintLayout

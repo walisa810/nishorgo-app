@@ -5,7 +5,7 @@
     android:id="@+id/main_rvhome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RV.RVHomeWork">
+    >
     <TextView
         android:id="@+id/tvHeading"
         android:layout_width="match_parent"
